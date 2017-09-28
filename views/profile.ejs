@@ -1,0 +1,13 @@
+
+
+<p>ID: <%= user.id %></p>
+<p>Username: <%= user.username %></p>
+<p>Name: <%= user.displayName %></p>
+<p>Followers: <%= user._json.data.counts.followed_by %></p>
+<p>Picture count: <%= user._json.data.counts.media %></p>
+<img src="<%= user._json.data.profile_picture %>" />
+
+ <%- include nav %>
+
+
+

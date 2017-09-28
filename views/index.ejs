@@ -1,0 +1,24 @@
+
+
+                     <!DOCTYPE html>
+<html>
+	<head>
+		<title>Passport-Instagram Example</title>
+	</head>
+	<body>
+		<% if (!user) { %>
+       
+			<p>
+			<a href="/">Home</a> | 
+		    <a href="/auth/instagram">Login</a>
+			</p>
+		<% } else { %>
+         <h2>Hello, <%= user.username %>.</h2>
+			<p>
+			<a href="/">Home</a> | 
+			<a href="/profile">Profile</a> | 
+			<a href="/logout">Log Out</a>
+			</p>
+		<% } %>
+	</body>
+</html>

@@ -48,8 +48,6 @@ passport.use(
           item.forEach(function(elem) {
             imageArr.push(elem.images.low_resolution.url);
           });
-
-          console.log("HEEEEEEEEEJ");
         })
         .catch(function(error) {
           console.log(error);
